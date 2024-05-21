@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap');
+
+/*COLOURS AND FONTS*/
+:root {
+    /*COLOURS*/
+	--primary: #0061a6;
+	--onPrimary: #ffffff;
+	--primaryContainer: #d2e4ff;
+	--onPrimaryContainer: #001c37;
+	--secondary: #535f70;
+	--onSecondary: #ffffff;
+	--secondaryContainer: #d7e3f8;
+	--onSecondaryContainer: #101c2b;
+	--tertiary: #6c5778;
+	--onTertiary: #ffffff;
+	--tertiaryContainer: #f3daff;
+	--onTertiaryContainer: #251431;
+	--background: #fdfcff;
+	--onBackground: #1a1c1e;
+	--surface: #fdfcff;
+	--onSurface: #1a1c1e;
+	--outline: #73777f;
+	--surfaceVarient: #dfe2eb;
+	--onSurfaceVarient: #43474e;
+
+    /*FONTS*/
+    --mainFont: 'Outfit', sans-serif;
+}
+
+/*HTML CSS CODE*/
+
+html {
+    background-color: var(--background);
+    font-family: var(--mainFont);
+    color: var(--onPrimaryContainer);
+}
+
+.icon, .activeIcon {
+    padding-top: 2px;
+  }
+
+.icon {
+    vertical-align: middle !important;
+}
+
+.top-bar {
+    background-color: var(--primaryContainer);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    color: #1c2120;
+    padding: 0px;
+    z-index: 1;
+}
+
+.top-bar__title {
+    font-size: 20px;
+    margin: 0;
+    font-weight: bold;
+}
+
+.top-bar .icon {
+  text-align: right !important;
+}
+
+.container {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0px;
+    height: 50px;
+}
+
+#content {
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
+    width: 100%;
+    border: none;
+    zoom: 0.6;
+    z-index: 0;
+}
+
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+    #content {
+        zoom: 1;
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--primary: #a0c9ff;
+		--onPrimary: #00325a;
+		--primaryContainer: #253141;
+		--onPrimaryContainer: #d2e4ff;
+		--secondary: #bbc7db;
+		--onSecondary: #253141;
+		--secondaryContainer: #3c4858;
+		--onSecondaryContainer: #d7e3f8;
+		--tertiary: #d7bde4;
+		--onTertiary: #3b2947;
+		--tertiaryContainer: #533f5f;
+		--onTertiaryContainer: #f3daff;
+		--background: #1a1c1e;
+		--onBackground: #e3e2e6;
+		--surface: #1a1c1e;
+		--onSurface: #e3e2e6;
+		--outline: #8d9199;
+		--surfaceVarient: #43474e;
+		--onSurfaceVarient: #c3c6cf;
+	}
+}
